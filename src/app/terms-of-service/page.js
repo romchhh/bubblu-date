@@ -25,7 +25,7 @@ export default function TermsOfService() {
                 />
               </div>
               <span className="text-xl font-bold text-gray-800">
-                Vevyne❣
+                Vevyne
               </span>
             </div>
             
@@ -245,7 +245,7 @@ export default function TermsOfService() {
                     <div>
                       <h4 className="font-semibold text-yellow-800 mb-2">Важливе попередження</h4>
                       <p className="text-yellow-700 text-sm">
-                        Vevyne❣️ - це платформа для знайомств. Ми не гарантуємо успішність у пошуку партнера 
+                        Vevyne - це платформа для знайомств. Ми не гарантуємо успішність у пошуку партнера 
                         та не несемо відповідальності за стосунки між користувачами.
                       </p>
                     </div>
@@ -310,7 +310,7 @@ export default function TermsOfService() {
                 
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Ми можемо оновлювати ці Умови час від часу. Про будь-які зміни ми повідомимо вас 
-                  через додаток, email або на нашому сайті. Продовження використання Сервісу після 
+                  через сервіс, email або на нашому сайті. Продовження використання Сервісу після 
                   змін означає вашу згоду з новими Умовами.
                 </p>
                 

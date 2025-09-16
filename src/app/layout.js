@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Vevyne❣ Знайомства та спілкування",
-  description: "Найкращий додаток для знайомств в Україні. З'єднуємо серця та душі людей, які дійсно підходять один одному.",
+  title: "Vevyne Знайомства та спілкування",
+  description: "Найкращий сервіс для знайомств в Україні. З'єднуємо серця та душі людей, які дійсно підходять один одному.",
 };
 
 export default function RootLayout({ children }) {

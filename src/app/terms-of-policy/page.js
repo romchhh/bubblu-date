@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Політика приватності | Vevyne❣",
+  title: "Політика приватності | Vevyne",
   description: "Політика приватності Vevyne - додатку для знайомств та спілкування в Україні.",
 };
 
@@ -25,7 +25,7 @@ export default function TermsOfPolicy() {
                 />
               </div>
               <span className="text-xl font-bold text-gray-800">
-                Vevyne❣
+                Vevyne
               </span>
             </div>
             
@@ -60,7 +60,7 @@ export default function TermsOfPolicy() {
                   1. Загальні положення
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Ця Політика приватності описує, як Vevyne❣ (далі - &ldquo;ми&rdquo;, &ldquo;наш&rdquo;, &ldquo;нас&rdquo;) збирає, використовує, 
+                  Ця Політика приватності описує, як Vevyne (далі - &ldquo;ми&rdquo;, &ldquo;наш&rdquo;, &ldquo;нас&rdquo;) збирає, використовує, 
                   зберігає та захищає вашу персональну інформацію при використанні нашого додатку для знайомств 
                   та спілкування.
                 </p>
@@ -265,7 +265,7 @@ export default function TermsOfPolicy() {
                 
                 <p className="text-gray-700 leading-relaxed">
                   Ми можемо оновлювати цю Політику приватності час від часу. Про будь-які зміни ми повідомимо вас 
-                  через додаток або email. Рекомендуємо періодично переглядати цю сторінку для ознайомлення з актуальною 
+                  через сервіс або email. Рекомендуємо періодично переглядати цю сторінку для ознайомлення з актуальною 
                   версією.
                 </p>
               </section>
