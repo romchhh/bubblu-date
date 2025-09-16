@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Heart, Users, Shield, Zap, Star, Check, ArrowRight, Menu, X, MapPin, MessageCircle, Sparkles, CreditCard, User, Mail, Phone, Calendar, Gift, Crown, Flame, TrendingUp } from 'lucide-react';
 
 const BubbluidateWebsite = () => {
@@ -298,31 +299,37 @@ const BubbluidateWebsite = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-100">
+    <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center">
-                <Heart className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 rounded-full overflow-hidden">
+                <Image 
+                  src="/2025-09-16 17.07.34.jpg" 
+                  alt="Vevyne Logo" 
+                  width={32}
+                  height={32}
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-                Bubbludate
+              <span className="text-xl font-bold text-gray-800">
+                Vevyne❣
               </span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#features" className="text-gray-700 hover:text-pink-600 transition-colors">Особливості</a>
-              <a href="#pricing" className="text-gray-700 hover:text-pink-600 transition-colors">Ціни</a>
-              <a href="#shop" className="text-gray-700 hover:text-pink-600 transition-colors">Магазин</a>
-              <a href="#testimonials" className="text-gray-700 hover:text-pink-600 transition-colors">Відгуки</a>
-              <a href="#faq" className="text-gray-700 hover:text-pink-600 transition-colors">FAQ</a>
+              <a href="#features" className="text-gray-700 hover:text-gray-900 transition-colors">Особливості</a>
+              <a href="#pricing" className="text-gray-700 hover:text-gray-900 transition-colors">Ціни</a>
+              <a href="#shop" className="text-gray-700 hover:text-gray-900 transition-colors">Магазин</a>
+              <a href="#testimonials" className="text-gray-700 hover:text-gray-900 transition-colors">Відгуки</a>
+              <a href="#faq" className="text-gray-700 hover:text-gray-900 transition-colors">FAQ</a>
               <a 
-                href="https://t.me/Bubblu_Date_Bot" 
+                href="https://t.me/VevyneDatingBot?start=start" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-full hover:from-pink-600 hover:to-purple-700 transition-all transform hover:scale-105 flex items-center space-x-2"
+                className="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all flex items-center space-x-2"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Перейти до бота</span>
@@ -348,10 +355,10 @@ const BubbluidateWebsite = () => {
               <a href="#testimonials" className="block px-3 py-2 text-gray-700">Відгуки</a>
               <a href="#faq" className="block px-3 py-2 text-gray-700">FAQ</a>
               <a 
-                href="https://t.me/Bubblu_Date_Bot" 
+                href="https://t.me/VevyneDatingBot?start=start" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="block w-full text-left bg-gradient-to-r from-pink-500 to-purple-600 text-white px-3 py-2 rounded-lg flex items-center space-x-2"
+                className="block w-full text-left bg-gray-900 text-white px-3 py-2 rounded-lg flex items-center space-x-2"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Перейти до бота</span>
@@ -363,29 +370,28 @@ const BubbluidateWebsite = () => {
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4 relative overflow-hidden">
-        {/* Animated Background Elements */}
+        {/* Minimal Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-40 left-1/2 w-80 h-80 bg-indigo-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" style={{ animationDelay: '4s' }}></div>
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gray-200 rounded-full filter blur-xl opacity-10"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gray-300 rounded-full filter blur-xl opacity-10"></div>
         </div>
         
         <div className="max-w-7xl mx-auto text-center relative z-10">
-          <div className={`inline-flex items-center space-x-2 bg-white/70 rounded-full px-6 py-2 mb-8 transition-all duration-1000 ${
+          <div className={`inline-flex items-center space-x-2 bg-white rounded-lg px-6 py-2 mb-8 transition-all duration-1000 ${
             animateElements ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
-            <Sparkles className="w-5 h-5 text-pink-500 animate-spin" style={{ animationDuration: '3s' }} />
+            <Sparkles className="w-5 h-5 text-gray-600" />
             <span className="text-sm font-medium text-gray-700">Найкращий додаток для знайомств в Україні</span>
           </div>
           
-          <h1 className={`text-5xl md:text-7xl font-bold mb-6 transition-all duration-1000 ${
+          <h1 className={`text-5xl md:text-7xl font-bold mb-6 transition-all duration-1000 text-gray-900 ${
             animateElements ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`} style={{ transitionDelay: '200ms' }}>
-            <span className="bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent animate-pulse">
+            <span>
               Знайди свою
             </span>
             <br />
-            <span className="bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent animate-pulse" style={{ animationDelay: '1s' }}>
+            <span>
               ідеальну пару!
             </span>
           </h1>
@@ -393,7 +399,7 @@ const BubbluidateWebsite = () => {
           <p className={`text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed transition-all duration-1000 ${
             animateElements ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`} style={{ transitionDelay: '400ms' }}>
-            Bubblu - це не просто додаток для знайомств, це твій найкращий друг у пошуку справжнього кохання. 
+            Vevyne - це не просто додаток для знайомств, це твій найкращий друг у пошуку справжнього кохання. 
             З&apos;єднуємо серця та душі людей, які дійсно підходять один одному.
           </p>
           
@@ -401,16 +407,16 @@ const BubbluidateWebsite = () => {
             animateElements ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`} style={{ transitionDelay: '600ms' }}>
             <a 
-              href="https://t.me/Bubblu_Date_Bot" 
+              href="https://t.me/VevyneDatingBot?start=start" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-pink-600 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2 group"
+              className="bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-all flex items-center space-x-2 group"
             >
               <MessageCircle className="w-5 h-5" />
               <span>Перейти до бота</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-pink-500 hover:text-pink-600 transition-all transform hover:scale-105 hover:shadow-lg">
+            <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg text-lg font-semibold hover:border-gray-900 hover:text-gray-900 transition-all">
               Дізнатися більше
             </button>
           </div>
@@ -419,22 +425,22 @@ const BubbluidateWebsite = () => {
           <div className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto transition-all duration-1000 ${
             animateElements ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`} style={{ transitionDelay: '800ms' }}>
-            <div className="bg-white/70 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/80 transition-all transform hover:scale-105 hover:shadow-lg">
-              <div className="text-3xl font-bold text-pink-600 mb-2 flex items-center space-x-2">
+            <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all">
+              <div className="text-3xl font-bold text-gray-900 mb-2 flex items-center space-x-2">
                 <TrendingUp className="w-6 h-6" />
                 <span>100K+</span>
               </div>
               <div className="text-gray-600">Активних користувачів</div>
             </div>
-            <div className="bg-white/70 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/80 transition-all transform hover:scale-105 hover:shadow-lg">
-              <div className="text-3xl font-bold text-purple-600 mb-2 flex items-center space-x-2">
+            <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all">
+              <div className="text-3xl font-bold text-gray-900 mb-2 flex items-center space-x-2">
                 <Heart className="w-6 h-6" />
                 <span>50K+</span>
               </div>
               <div className="text-gray-600">Успішних пар</div>
             </div>
-            <div className="bg-white/70 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/80 transition-all transform hover:scale-105 hover:shadow-lg">
-              <div className="text-3xl font-bold text-indigo-600 mb-2 flex items-center space-x-2">
+            <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all">
+              <div className="text-3xl font-bold text-gray-900 mb-2 flex items-center space-x-2">
                 <Star className="w-6 h-6" />
                 <span>4.9★</span>
               </div>
@@ -448,10 +454,8 @@ const BubbluidateWebsite = () => {
       <section id="features" className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-                Чому саме Bubblu?
-              </span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              Чому саме Vevyne?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Ми створили найрозумніший алгоритм пошуку партнера з максимальною безпекою та зручністю
@@ -467,7 +471,7 @@ const BubbluidateWebsite = () => {
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl flex items-center justify-center text-white mb-6 transform hover:scale-110 transition-transform duration-300">
+                <div className="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center text-white mb-6">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-4">{feature.title}</h3>
@@ -479,13 +483,11 @@ const BubbluidateWebsite = () => {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-16 px-4 bg-gradient-to-r from-pink-50 to-purple-50">
+      <section id="pricing" className="py-16 px-4 bg-gray-100">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-                Обери свій план
-              </span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              Обери свій план
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Різні варіанти для різних потреб. Почни з безкоштовної версії або отримай всі можливості з Premium
@@ -495,17 +497,17 @@ const BubbluidateWebsite = () => {
           <div className="flex justify-center">
             <div className="max-w-2xl w-full">
               {/* Premium Plan */}
-              <div className="bg-gradient-to-br from-pink-500 to-purple-600 rounded-3xl p-8 text-white relative overflow-hidden">
-              <div className="absolute top-4 right-4 bg-white/20 rounded-full px-3 py-1 text-sm font-semibold">
+              <div className="bg-gray-900 rounded-2xl p-8 text-white relative">
+              <div className="absolute top-4 right-4 bg-white text-gray-900 rounded-full px-3 py-1 text-sm font-semibold">
                 Популярний
               </div>
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center mb-6">
                   <Star className="w-8 h-8" />
                 </div>
                 <h3 className="text-3xl font-bold mb-2">Premium підписка</h3>
                 <div className="text-4xl font-bold mb-2">$15.00</div>
-                <div className="text-white/80 mb-8">на місяць</div>
+                <div className="text-gray-300 mb-8">на місяць</div>
                 
                 <div className="space-y-3 mb-8">
                   {pricingPlans[0].features.map((feature, index) => (
@@ -518,7 +520,7 @@ const BubbluidateWebsite = () => {
                 
                 <button 
                   onClick={() => setShowCheckout(true)}
-                  className="w-full bg-white text-pink-600 py-4 rounded-xl font-bold text-lg hover:bg-gray-50 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  className="w-full bg-white text-gray-900 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all"
                 >
                   Придбати Premium
                 </button>
@@ -680,10 +682,16 @@ const BubbluidateWebsite = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center">
-                  <Heart className="w-5 h-5 text-white" />
+                <div className="w-8 h-8 rounded-full overflow-hidden">
+                  <Image 
+                    src="/2025-09-16 17.07.34.jpg" 
+                    alt="Vevyne Logo" 
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <span className="text-xl font-bold">Bubbludate</span>
+                <span className="text-xl font-bold">Vevyne❣</span>
               </div>
               <p className="text-gray-400">
                 Найкращий додаток для знайомств в Україні. З&apos;єднуємо серця!
@@ -711,14 +719,14 @@ const BubbluidateWebsite = () => {
             <div>
               <h3 className="font-bold mb-4">Правова інформація</h3>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Політика приватності</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Умови використання</a></li>
+                <li><a href="/terms-of-policy" className="hover:text-white transition-colors">Політика приватності</a></li>
+                <li><a href="/terms-of-service" className="hover:text-white transition-colors">Умови використання</a></li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Bubbludate. Всі права захищені.</p>
+            <p>&copy; 2025 Vevyne❣. Всі права захищені.</p>
           </div>
         </div>
       </footer>
@@ -1088,7 +1096,7 @@ const BubbluidateWebsite = () => {
                   
                   <div className="flex space-x-4">
                     <a 
-                      href="https://t.me/Bubblu_Date_Bot" 
+                      href="https://t.me/VevyneDatingBot?start=start" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 text-white py-4 rounded-2xl font-bold text-lg hover:from-blue-600 hover:to-blue-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 group"
@@ -1240,7 +1248,7 @@ const BubbluidateWebsite = () => {
                 </button>
                 
                 <a 
-                  href="https://t.me/Bubblu_Date_Bot" 
+                  href="https://t.me/VevyneDatingBot?start=start" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-4 rounded-2xl font-bold text-lg hover:from-blue-600 hover:to-blue-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 group"
@@ -1666,7 +1674,7 @@ const BubbluidateWebsite = () => {
                   
                   <div className="flex space-x-4">
                     <a 
-                      href="https://t.me/Bubblu_Date_Bot" 
+                      href="https://t.me/VevyneDatingBot?start=start"
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 text-white py-4 rounded-2xl font-bold text-lg hover:from-blue-600 hover:to-blue-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 group"
