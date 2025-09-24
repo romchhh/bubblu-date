@@ -257,7 +257,7 @@ const BubbluidateWebsite = () => {
     },
     {
       question: "Скільки коштує Premium підписка?",
-      answer: "Premium підписка коштує $15 на місяць. Вона включає всі преміум функції: безлімітні лайки, розширений пошук, DateRadar та багато іншого."
+      answer: "Premium доступний у трьох варіантах: Тиждень — 4.99$, Місяць — 10$, 6 Місяців — 36$. Купівля та активація відбувається через наш Telegram-бот."
     },
     {
       question: "Можна купити окремі функції?",
@@ -884,8 +884,7 @@ const BubbluidateWebsite = () => {
                   }`}
                   onClick={(e) => {
                     e.stopPropagation();
-                    setShowCheckout(true);
-                    setSelectedPlan('week');
+                    window.open('https://t.me/VevyneDatingBot?start=start', '_blank', 'noopener');
                   }}
                 >
                   {clickedButton === 'week' ? (
@@ -977,8 +976,7 @@ const BubbluidateWebsite = () => {
                   }`}
                   onClick={(e) => {
                     e.stopPropagation();
-                    setShowCheckout(true);
-                    setSelectedPlan('month');
+                    window.open('https://t.me/VevyneDatingBot?start=start', '_blank', 'noopener');
                   }}
                 >
                   {clickedButton === 'month' ? (
@@ -1070,8 +1068,7 @@ const BubbluidateWebsite = () => {
                   }`}
                   onClick={(e) => {
                     e.stopPropagation();
-                    setShowCheckout(true);
-                    setSelectedPlan('6months');
+                    window.open('https://t.me/VevyneDatingBot?start=start', '_blank', 'noopener');
                   }}
                 >
                   {clickedButton === '6months' ? (
@@ -1149,8 +1146,7 @@ const BubbluidateWebsite = () => {
                         pkg.popular ? 'border-pink-500 bg-pink-50' : 'border-gray-200'
                       }`}
                       onClick={() => {
-                        setSelectedShopItem({ ...item, selectedPackage: pkg });
-                        setShowShop(true);
+                        window.open('https://t.me/VevyneDatingBot?start=start', '_blank', 'noopener');
                       }}
                     >
                       <div className="flex justify-between items-center">
@@ -1855,9 +1851,7 @@ const BubbluidateWebsite = () => {
               <div className="space-y-4">
                 <button 
                   onClick={() => {
-                    setShowShop(false);
-                    setShowShopCheckout(true);
-                    setShopCheckoutStep(1);
+                    window.open('https://t.me/VevyneDatingBot?start=start', '_blank', 'noopener');
                   }}
                   className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-4 rounded-2xl font-bold text-lg hover:from-pink-600 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 group"
                 >
